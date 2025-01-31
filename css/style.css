@@ -1,0 +1,176 @@
+:root{
+    --cor-fundo: #f8ecce;
+    --primary-color: #556B2F;
+    --second-color: #C2A77D;
+    
+}
+
+*{
+    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+}
+
+/*
+==========================
+        Header
+==========================
+*/
+ 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.img-logo{
+    width: 5%;
+    height: auto;
+}
+
+.carrinho i{
+    font-size: 25px;
+    
+}
+
+/*
+==========================
+        Main-Index
+==========================
+*/
+
+.img-fundo{
+    width: 100%;
+    height: auto;
+}
+
+.main-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.main-text p {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.btn-padrao{
+    width: 20rem;
+    padding: 15px;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    border-radius: 25px;   
+    border: 0; 
+    
+}
+
+
+
+/*
+======================
+    Login 
+======================
+*/
+
+.titulo-login {
+   text-align: center;
+   margin: 20px;
+   font-size: 32px;
+}
+
+.formulario-login, .formulario-login div{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 4rem;
+}
+
+.input-grupo {
+    width: 100%; 
+     
+}
+
+.input-grupo label{
+    width: 50%;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+
+.input-grupo input{
+    width: 50%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #d6c8b2;
+    padding: 0 4px;
+}
+
+.formulario-login .btn-padrao{
+    margin-bottom: 2rem;
+}
+
+.formulario-login a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+/*
+======================
+    RESPONSIBIDADE 
+======================
+*/
+@media only screen and (max-width: 1024px) {
+    .main-text p{
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .img-fundo{
+        margin: 25px 0;
+    }
+
+    .img-logo{
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    header a{
+        font-size: 15px;
+        
+    }
+    
+    .img-fundo{
+        height: 15rem;
+    }
+
+    .img-logo{
+        width: 18%;
+    }
+
+    .input-grupo input, .input-grupo label, .formulario-login .btn-padrao{
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    .main-text button{
+        width: 15rem;
+    }
+}
+
+
