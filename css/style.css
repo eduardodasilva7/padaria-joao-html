@@ -343,6 +343,9 @@ header a{
         align-items: center;
     }
 
+    .categorias{
+        gap: 14%;
+    }
     
 }
 
@@ -358,6 +361,18 @@ header a{
     .box-produtos{
         margin-left: 0;
         width: 670px;
+    }
+
+    .categorias{
+        width: 90%;
+    }
+
+    .grid-produtos{
+        justify-content: space-between;
+    }
+
+    .produtos{
+        margin: 2rem;
     }
 }
 
@@ -395,8 +410,36 @@ header a{
     .box-produtos p {
         font-size: 15px;
     }
+
+    .categorias{
+        width: 99%;
+        gap: 10%;
+    }
+
+    .categorias button{
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .grid-produtos{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
+@media only screen and (max-width: 375px){
+    .box-produtos{
+        width: 300px;
+    }
+
+    .quantidade{
+        width: 50px;
+    }
+
+    .quantidade p, .quantidade button{
+        font-size: 14px;
+    }
+}
 
 @media only screen and (max-width: 320px) {
     .main-text button{
@@ -427,6 +470,10 @@ header a{
 
     .btn-carrinho{
         width: 18rem;
+    }
+
+    .categorias{
+        gap: 7%;
     }
 }
 
